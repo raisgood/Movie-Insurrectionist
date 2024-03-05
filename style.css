@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: fantasy;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    background: black;
+    color: #fff;
+  }
+  
+  #home{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background: center;
+  }
+  .container{
+    padding: 10px 10%;
+  }
+  
+  .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo{
+    width: 140px;
+    border-radius: 30px;
+  }
+  
+  .nav-bar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  }
+  
+  .nav-bar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  .nav-bar ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  
+  .nav-bar ul li a:hover::after{
+    width: 100%;
+  }
+  
+  .home-text{
+    margin-top: 20%;
+    font-size: 30px;
+    display: block;
+    padding: 15px;
+    align-items: center;
+  }
+  
+  .home-text h1{
+    padding: 5px;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .home-text p{
+    align-items: center;
+    padding: 5px;
+    margin-left: 40vh;
+  }
+
+  /*----------------------------------About----------------------------------*/
+
+  #about{
+   padding: 80px 0;
+   color: #ababab;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .about-col-1{
+    flex-basis: 35%;
+  }
+  .about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+  }
+  .about-col-2{
+    flex-basis: 60%;
+  }
+  .sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+/*-------------------------------------reviews-------------------------------------*/
+
+  #reviews{
+    padding: 30px 0;
+  }
+  .review-list{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .review-list div{
+    text-align: center;
+    padding: 40px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+  }
+  .review-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .review-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .review-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  .review-list div:hover{
+    background: #bfb1b6b2;
+    transform: translateY(-10px);
+  }
+
+  .review-1{
+    background-image: url(images/action-jackson-movie-poster-md.jpg);
+  }
+
+  .review-2{
+    background-image: url(images/the-godfather-movie-poster-sm.jpg);
+  }
+
+  .review-3{
+    background-image: url(images/predator-movie-poster-md.jpg);
+  }
+
+
+  

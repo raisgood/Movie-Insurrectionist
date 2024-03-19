@@ -11,12 +11,14 @@
       <div class="container">
         <nav class="nav-bar">
           <img src="images/Screenshot_12-2-2024_215516_www.bing.com.jpeg" class="logo">
-          <ul>
+          <ul id="sidemenu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid" onclick="openmenu()"></i>
         </nav>
       </div>
     </div>
@@ -42,14 +44,17 @@
         <h1 class="sub-title">Reviews<h1>
           <div class="review-list">
             <div class="review-1">
+              <img src="images/action-jackson-movie-poster-md.jpg">
               <h2>Action Jackson</h2>
               <button class="review-btn"><a href="youtube.com">Go to Review</a></button>
             </div>
             <div class="review-2">
+              <img src="images/The Godfather.png">
               <h2>The Godfather</h2>
               <button class="review-btn"><a href="youtube.com">Go to Review</a></button>
             </div>
             <div class="review-3">
+              <img src="images/predator-movie-poster-md.jpg">
               <h2>Predator</h2>
               <button class="review-btn"><a href="youtube.com">Go to Review</a></button>
             </div>
@@ -89,7 +94,14 @@
 </div>
 
 <script>
-  
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+      sidemenu.style.right = "0";
+  }
+  function closemenu(){
+      sidemenu.style.right = "-200px";
+  }
 </script>
 
 <script>

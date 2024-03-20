@@ -53,7 +53,7 @@
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(198, 4, 4);
+    background: rgba(74, 104, 151, 0.878);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -274,7 +274,7 @@ nav .fa-solid{
   display: none;
 }
 
-@media screen and (max-width:800px){
+@media only screen and (max-width:800px){
   *{
     margin: 0px;
     padding: 0px;
@@ -302,47 +302,46 @@ nav .fa-solid{
   .container{
     padding: 10px 10%;
   }
-  
-  .nav-bar{
+
+  .nav-bar .fa-solid{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+    font-size: 25px;
+    color: darkslategrey;
+}
+.nav-bar ul{
+    background: #a71313;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+.nav-bar ul li{
+    display: grid;
+    margin: 25px;
+    padding: 5px;
+}
+.nav-bar ul li a{
+  font-size: 25px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-bar ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
   
   .logo{
     width: 120px;
     border-radius: 100px;
   }
-  
-  .nav-bar ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-  }
-  
-  .nav-bar ul li a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-  }
-  
-  .nav-bar ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: rgb(198, 4, 4);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-  }
-  
-  .nav-bar ul li a:hover::after{
-    width: 100%;
-  }
-  
+
   .home-text{
     margin-top: 20%;
     font-size: 30px;
@@ -550,7 +549,7 @@ form .btn{
 
 /*------------------------------------------media screen and (max-width:600px)----------------------------------------------------*/
 
-@media screen and (max-width:600px){
+@media only screen and (max-width:600px){
   *{
     margin: 0px;
     padding: 0px;
@@ -585,38 +584,44 @@ form .btn{
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
+  .nav-bar .fa-solid{
+    display: flex;
+    font-size: 25px;
+    color: darkslategrey;
+}
+.nav-bar ul{
+    background: #a71313;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+.nav-bar ul li{
+    display: grid;
+    margin: 25px;
+    padding: 5px;
+}
+.nav-bar ul li a{
+  font-size: 25px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-bar ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
   
   .logo{
     width: 80px;
     border-radius: 100px;
-  }
-  
-  .nav-bar ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-  }
-  
-  .nav-bar ul li a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-  }
-  
-  .nav-bar ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: rgb(198, 4, 4);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-  }
-  
-  .nav-bar ul li a:hover::after{
-    width: 100%;
   }
   
   .home-text{
@@ -827,7 +832,7 @@ form .btn{
 
 /*-----------------------------------------------------------media screen and (max-width:400px)--------------------------------------*/
 
-@media screen and (max-width:400px){
+@media only screen and (max-width:400px){
   *{
     margin: 0px;
     padding: 0px;
@@ -860,39 +865,45 @@ form .btn{
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
+  .nav-bar .fa-solid{
+    display: flex;
+    font-size: 25px;
+    color: darkslategrey;
+}
+.nav-bar ul{
+    background: #a71313;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+.nav-bar ul li{
+    display: grid;
+    margin: 25px;
+    padding: 5px;
+}
+.nav-bar ul li a{
+  font-size: 25px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-bar ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
   
   .logo{
-    padding: 3px;
-    width: 30px;
+    padding: 5px;
+    width: 50px;
     border-radius: 100px;
-  }
-  
-  .nav-bar ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-  }
-  
-  .nav-bar ul li a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 12px;
-    position: relative;
-  }
-  
-  .nav-bar ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: rgb(198, 4, 4);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-  }
-  
-  .nav-bar ul li a:hover::after{
-    width: 100%;
   }
   
   .home-text{

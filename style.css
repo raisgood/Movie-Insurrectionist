@@ -1,0 +1,1113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: fantasy;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    background: black;
+    color: #fff;
+  }
+  
+  #home{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background: center;
+    background-image:url(images/THE-MOVIE-INSURRECTIONIST-2.jpg);
+  }
+  .container{
+    padding: 10px 10%;
+  }
+  
+  .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo{
+    width: 140px;
+    border-radius: 100px;
+  }
+  
+  .nav-bar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  }
+  
+  .nav-bar ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  .nav-bar ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgba(74, 104, 151, 0.878);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  
+  .nav-bar ul li a:hover::after{
+    width: 100%;
+  }
+  
+  .home-text{
+    margin-top: 20%;
+    font-size: 30px;
+    display: block;
+    padding: 15px;
+    align-items: center;
+  }
+  
+  .home-text h1{
+    padding: 5px;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .home-text p{
+    align-items: center;
+    padding: 5px;
+    margin-left: 40vh;
+  }
+
+  /*----------------------------------About----------------------------------*/
+
+  #about{
+   padding: 80px 0;
+   color: #ababab;
+   height: 100%;
+  }
+
+  .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .about-col-1{
+    flex-basis: 35%;
+  }
+  .about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+  }
+  .about-col-2{
+    flex-basis: 60%;
+  }
+  .sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+/*-------------------------------------reviews-------------------------------------*/
+
+  #review{
+    padding: 30px 0;
+    height: 100%;
+  }
+
+  .review-list{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .review-list div{
+    text-align: center;
+    padding: 10px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    color: #ff0909; 
+  }
+
+  .review-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .review-list div a{
+    text-decoration: none;
+    color: #ef1010;
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  .review-list div:hover {
+    background: #bfb1b6b2;
+    transform: translateY(-10px);
+    height: 50%;
+  }
+
+  .review-1 img{
+    display: block;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  .review-2 img{
+    display: block;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  .review-3 img{
+    display: block;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  .review-btn{
+    border-radius: 250px;
+    padding: 10px;
+    border:#ff0909;
+    margin: 10px;
+  }
+
+  .review-btn a{
+    margin: 1px 5px 1px 5px;
+  }
+
+  .review-btn:hover{
+    background:#e47f9f;
+    transform: translateY(-10px);
+  }
+
+  /*------------------------------Contact-----------------------------------*/
+
+  #contact{
+    margin-top: 25px;
+  }
+
+  .contact-left{
+    flex-basis: 35%;
+  }
+  .contact-left p{
+    margin-top: 30px;
+  }
+  .contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+  }
+  .contact-right{
+    flex-basis: 60%;
+  }
+  .social-icons{
+    padding: 10px;
+    margin-left: 40px;
+  }
+  .social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 12px;
+    color: #ababab;
+    display: inline-block;
+    transform: transform 0.5s;
+  }
+  .social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+  }
+  .btn{
+    display: inline-block;
+    background: #ff004f;
+  }
+  .contact-right form{
+    width: 100%;
+  }
+  form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.copyright{
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 50px;
+}
+.copyright i{
+  color: #ff004f;
+}
+
+/*----------------------------CSS for Small Screens-------------------------------------------------------------------------*/
+
+nav .fa-solid{
+  display: none;
+}
+
+@media only screen and (max-width:800px){
+  *{
+    margin: 0px;
+    padding: 0px;
+    font-family: fantasy;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    background: black;
+    color: #fff;
+  }
+  
+  #home{
+    background-image:url(images/THE-MOVIE-INSURRECTIONIST-2.jpg);
+    background-size: contain;
+    width: auto;
+    height: -webkit-fill-available;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 65vh;
+  }
+  .container{
+    padding: 10px 10%;
+  }
+
+  .nav-bar .fa-solid{
+    display: flex;
+    font-size: 25px;
+    color: darkslategrey;
+}
+.nav-bar ul{
+    background: #a71313;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+.nav-bar ul li{
+    display: grid;
+    margin: 25px;
+    padding: 5px;
+}
+.nav-bar ul li a{
+  font-size: 25px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-bar ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+  
+  .logo{
+    width: 120px;
+    border-radius: 100px;
+  }
+
+  .home-text{
+    margin-top: 20%;
+    font-size: 30px;
+    display: block;
+    padding: 15px;
+    align-items: center;
+  }
+  
+  .home-text h1{
+    padding: 5px;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .home-text p{
+    align-items: center;
+    padding: 5px;
+    margin-left: 40vh;
+  }
+
+  /*----------------------------------About----------------------------------*/
+
+  #about{
+   padding: 80px 0;
+   color: #ababab;
+   height: 100%;
+  }
+
+  .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .about-col-1{
+    flex-basis: 35%;
+  }
+  .about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+  }
+  .about-col-2{
+    flex-basis: 60%;
+  }
+  .sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+/*-------------------------------------reviews-------------------------------------*/
+
+  #review{
+    padding: 30px 0;
+    height: 100%;
+  }
+
+  .review-list{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .review-list div{
+    text-align: center;
+    padding: 40px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    color: #ff0909; 
+  }
+
+  .review-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .review-list div a{
+    text-decoration: none;
+    color: #ef1010;
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  .review-list div:hover {
+    background: #bfb1b6b2;
+    transform: translateY(-10px);
+    height: 50%;
+  }
+
+  .review-1 img{
+    display: block;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  .review-2 img{
+    display: block;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  .review-3 img{
+    display: block;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  .review-btn{
+    border-radius: 250px;
+    padding: 10px;
+    border:#ff0909;
+    margin: 10px;
+  }
+
+  .review-btn a{
+    margin: 1px 5px 1px 5px;
+  }
+
+  .review-btn:hover{
+    background:#e47f9f;
+    transform: translateY(-10px);
+  }
+
+  /*------------------------------Contact-----------------------------------*/
+
+  #contact{
+    margin-top: 25px;
+  }
+
+  .contact-left{
+    flex-basis: 35%;
+  }
+  .contact-left p{
+    margin-top: 30px;
+  }
+  .contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+  }
+  .contact-right{
+    flex-basis: 60%;
+  }
+  .social-icons{
+    padding: 10px;
+    margin-left: 40px;
+  }
+  .social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 12px;
+    color: #ababab;
+    display: inline-block;
+    transform: transform 0.5s;
+  }
+  .social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+  }
+  .btn{
+    display: inline-block;
+    background: #ff004f;
+  }
+  .contact-right form{
+    width: 100%;
+  }
+  form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.copyright{
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 50px;
+}
+.copyright i{
+  color: #ff004f;
+}
+}
+
+/*------------------------------------------media screen and (max-width:600px)----------------------------------------------------*/
+
+@media only screen and (max-width:600px){
+  *{
+    margin: 0px;
+    padding: 0px;
+    font-family: fantasy;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    background: black;
+    color: #fff;
+  }
+  
+  #home{
+    background-image:url(images/THE-MOVIE-INSURRECTIONIST-2.jpg);
+    background-size: contain;
+    width: auto;
+    height: -webkit-fill-available;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 48vh;
+  }
+  .container{
+    padding: 10px 5%;
+  }
+  
+  .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .nav-bar .fa-solid{
+    display: flex;
+    font-size: 25px;
+    color: darkslategrey;
+}
+.nav-bar ul{
+    background: #a71313;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+.nav-bar ul li{
+    display: grid;
+    margin: 25px;
+    padding: 5px;
+}
+.nav-bar ul li a{
+  font-size: 25px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-bar ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+  
+  .logo{
+    width: 80px;
+    border-radius: 100px;
+  }
+  
+  .home-text{
+    margin-top: 20%;
+    font-size: 30px;
+    display: block;
+    padding: 15px;
+    align-items: center;
+  }
+  
+  .home-text h1{
+    padding: 5px;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .home-text p{
+    align-items: center;
+    padding: 5px;
+    margin-left: 40vh;
+  }
+
+  /*----------------------------------About----------------------------------*/
+
+  #about{
+   padding: 80px 0;
+   color: #ababab;
+   height: 100%;
+  }
+
+  .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .about-col-1{
+    flex-basis: 35%;
+  }
+  .about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+  }
+  .about-col-2{
+    flex-basis: 60%;
+  }
+  .sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+/*-------------------------------------reviews-------------------------------------*/
+
+  #review{
+    padding: 30px 0;
+    height: 100%;
+  }
+
+  .review-list{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .review-list div{
+    text-align: center;
+    padding: 10px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    color: #ff0909; 
+  }
+
+  .review-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .review-list div a{
+    text-decoration: none;
+    color: #ef1010;
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  .review-list div:hover {
+    background: #bfb1b6b2;
+    transform: translateY(-10px);
+    height: 50%;
+  }
+
+  .review-1 img{
+    display: block;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  .review-2 img{
+    display: block;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  .review-3 img{
+    display: block;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  .review-btn{
+    border-radius: 250px;
+    padding: 10px;
+    border:#ff0909;
+    margin: 10px;
+  }
+
+  .review-btn a{
+    margin: 1px 5px 1px 5px;
+  }
+
+  .review-btn:hover{
+    background:#e47f9f;
+    transform: translateY(-10px);
+  }
+
+  /*------------------------------Contact-----------------------------------*/
+
+  #contact{
+    margin-top: 25px;
+  }
+
+  .contact-left{
+    flex-basis: 35%;
+  }
+  .contact-left p{
+    margin-top: 30px;
+  }
+  .contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+  }
+  .contact-right{
+    flex-basis: 60%;
+  }
+  .social-icons{
+    padding: 10px;
+    margin-left: 40px;
+  }
+  .social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 12px;
+    color: #ababab;
+    display: inline-block;
+    transform: transform 0.5s;
+  }
+  .social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+  }
+  .btn{
+    display: inline-block;
+    background: #ff004f;
+  }
+  .contact-right form{
+    width: 100%;
+  }
+  form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.copyright{
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 50px;
+}
+.copyright i{
+  color: #ff004f;
+}
+}
+
+/*-----------------------------------------------------------media screen and (max-width:400px)--------------------------------------*/
+
+@media only screen and (max-width:400px){
+  *{
+    margin: 0px;
+    padding: 0px;
+    font-family: fantasy;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+    background: black;
+    color: #fff;
+  }
+  
+  #home{
+    width: 100%;
+    height: 32vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image:url(images/THE-MOVIE-INSURRECTIONIST-2.jpg);
+  }
+  .container{
+    padding: 1px 10%;
+  }
+  
+  .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .nav-bar .fa-solid{
+    display: flex;
+    font-size: 25px;
+    color: darkslategrey;
+}
+.nav-bar ul{
+    background: #a71313;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+.nav-bar ul li{
+    display: grid;
+    margin: 25px;
+    padding: 5px;
+}
+.nav-bar ul li a{
+  font-size: 25px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-bar ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+  
+  .logo{
+    padding: 5px;
+    width: 50px;
+    border-radius: 100px;
+  }
+  
+  .home-text{
+    margin-top: 20%;
+    font-size: 30px;
+    display: block;
+    padding: 15px;
+    align-items: center;
+  }
+  
+  .home-text h1{
+    padding: 5px;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .home-text p{
+    align-items: center;
+    padding: 5px;
+    margin-left: 40vh;
+  }
+
+  /*----------------------------------About----------------------------------*/
+
+  #about{
+   padding: 80px 0;
+   color: #ababab;
+   height: 100%;
+  }
+
+  .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .about-col-1{
+    flex-basis: 35%;
+  }
+  .about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+  }
+  .about-col-2{
+    flex-basis: 60%;
+  }
+  .sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+/*-------------------------------------reviews-------------------------------------*/
+
+  #review{
+    padding: 30px 0;
+    height: 100%;
+  }
+
+  .review-list{
+    padding: 30px 0;
+    display: block;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .review-list div{
+    text-align: center;
+    padding: 10px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    color: #ff0909; 
+  }
+
+  .review-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .review-list div a{
+    text-decoration: none;
+    color: #ef1010;
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  .review-list div:hover {
+    background: #bfb1b6b2;
+    transform: translateY(-10px);
+    height: 50%;
+  }
+
+  .review-1 img{
+    display: block;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  .review-2 img{
+    display: block;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  .review-3 img{
+    display: block;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  .review-btn{
+    border-radius: 250px;
+    padding: 10px;
+    border:#ff0909;
+    margin: 10px;
+  }
+
+  .review-btn a{
+    margin: 1px 5px 1px 5px;
+  }
+
+  .review-btn:hover{
+    background:#e47f9f;
+    transform: translateY(-10px);
+  }
+
+  /*------------------------------Contact-----------------------------------*/
+
+  #contact{
+    margin-top: 25px;
+  }
+
+  .contact-left{
+    flex-basis: 35%;
+  }
+  .contact-left p{
+    margin-top: 30px;
+  }
+  .contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+  }
+  .contact-right{
+    flex-basis: 60%;
+  }
+  .social-icons{
+    padding: 10px;
+    margin-left: 40px;
+  }
+  .social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 12px;
+    color: #ababab;
+    display: inline-block;
+    transform: transform 0.5s;
+  }
+  .social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+  }
+  .btn{
+    display: inline-block;
+    background: #ff004f;
+  }
+  .contact-right form{
+    width: 100%;
+  }
+  form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.copyright{
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 50px;
+}
+.copyright i{
+  color: #ff004f;
+}
+}

@@ -1,1 +1,1 @@
-This is the website for movieinsurrectionist.com.
+This is the website for movie-insurrectionist.com.

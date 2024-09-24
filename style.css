@@ -1250,6 +1250,7 @@ form .btn{
   }
   .review-list div{
     text-align: center;
+    max-width: fit-content;
     padding: 10px;
     font-weight: 300;
     border-radius: 10px;

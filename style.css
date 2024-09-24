@@ -968,6 +968,7 @@ form .btn{
   .review-list div{
     text-align: center;
     padding: 10px;
+    max-width: 100px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
@@ -975,7 +976,7 @@ form .btn{
   }
 
   .review-list div h2{
-    font-size: 30px;
+    font-size: 10px;
     font-weight: 500;
     margin-bottom: 15px;
   }

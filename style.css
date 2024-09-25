@@ -968,7 +968,7 @@ form .btn{
   .review-list div{
     text-align: center;
     padding: 10px;
-    max-width: 100px;
+    max-width: fit-content;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;

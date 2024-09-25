@@ -292,7 +292,7 @@ nav .fa-solid{
   
   #home{
     background-image:url(images/THE-MOVIE-INSURRECTIONIST-2.jpg);
-    background-size: contain;
+    background-size: cover;
     width: auto;
     height: -webkit-fill-available;
     background-repeat: no-repeat;

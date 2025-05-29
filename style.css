@@ -131,6 +131,7 @@
   }
   .review-list div{
     text-align: center;
+    width: fit-content;
     padding: 10px;
     font-weight: 300;
     border-radius: 10px;
